@@ -1,0 +1,49 @@
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-sm-9">
+
+            <div *ngIf="team" class="animate__animated animate__bounce animate__fadeIn">
+
+                <div class="mdl-cell mdl-cell--8-col">
+        
+                    <mat-accordion class="example-headers-align">
+                        <mat-expansion-panel>
+                          
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    Team: {{team.name}}
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Press to show all details  &nbsp;&nbsp;
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <p><img style="width:80%; height: 80%;" class="rounded" src="{{team.flag}}" alt="flag"></p>
+                            <p><strong>Id:</strong> {{team.id}} </p>
+                            <p><strong>Fifa Code:</strong> {{team.fifaCode}}</p>
+                            <p><strong>ISO:</strong> {{team.iso2}}</p>
+                            <p><strong>Emoji:</strong> {{team.emoji}}</p>
+                            <p><strong>Emoji String:</strong> {{team.emojiString}}</p>
+        
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    
+                </div>
+        
+                
+            </div>
+
+        </div>
+
+        <div class="col-sm-3">
+            <a mat-flat-button [routerLink]="['/teams']" color="primary" class="mt-2">
+                <mat-icon>arrow_back_ios</mat-icon> Volver
+            </a>
+        </div>
+
+    </div>
+
+    
+
+</div>

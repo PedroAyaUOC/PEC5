@@ -1,0 +1,40 @@
+.card {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.badge {
+  color: black;
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mat-card-footer {
+  background: #3f51b5;
+  color: #fff;
+}
+
+.hover-card:hover{
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.img-card{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -3px;
+  margin-top: -5px !important;
+}
